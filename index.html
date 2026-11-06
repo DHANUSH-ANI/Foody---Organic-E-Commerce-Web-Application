@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody - Organic Food Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container topbar-flex">
+            <div>
+                <span><i class="fa fa-map-marker-alt"></i>Chennai,Tamilnadu</span>
+                <span style="margin-left: 15px;"><i class="fa fa-envelope"></i> info@foody.in</span>
+            </div>
+            <div class="topbar-right">
+                <label for="langSelect">Language: </label>
+                <select id="langSelect">
+                    <option value="en">English</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-flex">
+            <a href="#home" class="logo">F<span>oo</span>dy</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" data-key="nav_home">Home</a>
+                <a href="#about" data-key="nav_about">About Us</a>
+                <a href="#features" data-key="nav_features">Features</a>
+                <a href="#products" data-key="nav_products">Products</a>
+                <a href="#contact" data-key="nav_contact">Contact Us</a>
+            </nav>
+            <div class="nav-icons">
+                <button class="btn-icon" id="loginBtn">
+                    <i class="fa fa-user"></i> <span id="userLabel" data-key="login_text">Login</span>
+                </button>
+                <button class="btn-icon" id="cartBtn">
+                    <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2ZM1 2v2h2l3.6 7.59-1.35 2.45C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03L21 5H5.21l-.94-2H1Zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2Z"/></svg>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1 id="heroTitle" data-key="hero_title">Organic Food Is Good For Health</h1>
+            <p id="heroSub" data-key="hero_sub">Fresh vegetables, fruits, and groceries delivered directly from local farms to your home at the best prices in Indian Rupees.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary" data-key="btn_products">Products</a>
+                <a href="#about" class="btn btn-secondary" data-key="btn_services">About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Organic Vegetables">
+            </div>
+            <div class="about-text">
+                <div class="section-line"></div>
+                <h2 data-key="about_title">Best Organic Fruits And Vegetables</h2>
+                <p data-key="about_desc">We provide 100% natural, farm-fresh organic foods without any harmful chemicals. Healthy eating starts with clean and fresh ingredients.</p>
+                <ul class="check-list">
+                    <li><i class="fa fa-check"></i> <span data-key="about_p1">100% Natural and Fresh Farm Products</span></li>
+                    <li><i class="fa fa-check"></i> <span data-key="about_p2">No Chemical Fertilizers or Pesticides</span></li>
+                    <li><i class="fa fa-check"></i> <span data-key="about_p3">Affordable Student & Family Friendly Prices in ₹</span></li>
+                </ul>
+                <a href="#products" class="btn btn-primary" data-key="btn_shop">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section bg-light" id="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-line center-line"></div>
+                <h2 data-key="feat_title">Our Features</h2>
+                <p data-key="feat_sub">Why customers trust our organic store for daily groceries.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fa fa-leaf feat-icon"></i>
+                    <h3 data-key="f1_title">Natural Process</h3>
+                    <p data-key="f1_desc">Grown naturally in rich soil using traditional farming methods.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa fa-seedling feat-icon"></i>
+                    <h3 data-key="f2_title">Organic Products</h3>
+                    <p data-key="f2_desc">Handpicked fresh items checked daily for high quality.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa fa-check-circle feat-icon"></i>
+                    <h3 data-key="f3_title">Biologically Safe</h3>
+                    <p data-key="f3_desc">Safe and nutritious food for your everyday healthy lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="products-top">
+                <div>
+                    <div class="section-line"></div>
+                    <h2 data-key="prod_title">Our Products</h2>
+                    <p data-key="prod_sub">Fresh and organic farm products delivered directly to your kitchen.</p>
+                </div>
+                <div class="filter-controls">
+                    <input type="text" id="searchInput" placeholder="Search item...">
+                    <div class="cat-buttons">
+                        <button class="cat-btn active" data-cat="all" data-key="cat_all">All</button>
+                        <button class="cat-btn" data-cat="Vegetable" data-key="cat_veg">Vegetable</button>
+                        <button class="cat-btn" data-cat="Fruits" data-key="cat_fruit">Fruits</button>
+                        <button class="cat-btn" data-cat="Fresh" data-key="cat_fresh">Fresh</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <p>Loading products...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-line center-line"></div>
+                <h2 data-key="test_title">Customer Review</h2>
+                <p data-key="test_sub">What our regular customers say about our quality.</p>
+            </div>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p>"Very fresh vegetables and fast delivery. The tomatoes and apples are always clean and reasonably priced."</p>
+                    <h4>Priya Darshini</h4>
+                    <span>Home Maker, Chennai</span>
+                </div>
+                <div class="review-card">
+                    <p>"Easy to use website! Switching between Tamil and English is very helpful for my parents when ordering groceries."</p>
+                    <h4>Karthik Raja</h4>
+                    <span>College Student</span>
+                </div>
+                <div class="review-card">
+                    <p>"Pure organic honey and fresh milk. Best store for healthy items at local market prices."</p>
+                    <h4>Anitha Ramesh</h4>
+                    <span>Fitness Trainer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h2 class="logo">F<span>oo</span>dy</h2>
+                <p data-key="footer_desc">Fresh and organic farm products delivered directly to your kitchen.</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-key="footer_addr">Address</h3>
+                <p><i class="fa fa-map-marker-alt"></i>Chennai,TN</p>
+                <p><i class="fa fa-phone"></i> +91 89251 53250 </p>
+                <p><i class="fa fa-envelope"></i> info@foody.in</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-key="footer_links">Quick Links</h3>
+                <a href="#home" data-key="nav_home">Home</a>
+                <a href="#about" data-key="nav_about">About Us</a>
+                <a href="#features" data-key="nav_features">Features</a>
+                <a href="#products" data-key="nav_products">Products</a>
+            </div>
+            <div class="footer-col">
+                <h3 data-key="footer_news">Newsletter</h3>
+                <p>Subscribe for latest price updates.</p>
+                <form id="newsletterForm" class="news-form">
+                    <input type="email" id="newsEmail" placeholder="Your email" required>
+                    <button type="submit" class="btn btn-primary">SignUp</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Foody Organic Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="cart-box">
+            <div class="modal-header">
+                <h3 data-key="cart_title">Your Shopping Cart</h3>
+                <button class="close-btn" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItemsList"></div>
+            <div class="cart-footer">
+                <div class="total-row">
+                    <span data-key="total_text">Total Amount:</span>
+                    <strong id="cartTotal">₹0</strong>
+                </div>
+                <button class="btn btn-primary full-width" id="checkoutBtn" data-key="checkout_btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <div class="modal-overlay" id="authModal">
+        <div class="auth-box">
+            <div class="modal-header">
+                <h3 id="authTitle">Login</h3>
+                <button class="close-btn" id="closeAuth">&times;</button>
+            </div>
+            <div class="auth-tabs">
+                <button class="tab-btn active" id="tabLogin">Login</button>
+                <button class="tab-btn" id="tabSignup">Sign Up</button>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <label>Email Address</label>
+                <input type="email" id="loginEmail" placeholder="student@mail.com" required>
+                <label>Password</label>
+                <input type="password" id="loginPass" placeholder="Enter password" required>
+                <button type="submit" class="btn btn-primary full-width">Login</button>
+            </form>
+
+            <form id="signupForm" class="auth-form" style="display: none;">
+                <label>Full Name</label>
+                <input type="text" id="signName" placeholder="Enter your name" required>
+                <label>Email Address</label>
+                <input type="email" id="signEmail" placeholder="student@mail.com" required>
+                <label>Password</label>
+                <input type="password" id="signPass" placeholder="Minimum 6 characters" required>
+                <button type="submit" class="btn btn-secondary full-width">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="auth-box">
+            <div class="modal-header">
+                <h3 id="detailTitle">Product Details</h3>
+                <button class="close-btn" id="closeDetail">&times;</button>
+            </div>
+            <div id="detailContent" style="padding: 15px; text-align: center;"></div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Item added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
